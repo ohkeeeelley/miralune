@@ -1,0 +1,174 @@
+{
+  "853496137130835970": {
+    "character": {
+      "name": "11",
+      "age": "111",
+      "description": "",
+      "createdAt": "2026-04-09T01:20:38.360Z"
+    },
+    "global": {
+      "xp": 0,
+      "joinedAt": "2026-04-09T01:20:38.360Z",
+      "collection": [],
+      "befriendedPonies": [],
+      "favorites": []
+    },
+    "stats": {
+      "totalAllTimeBaked": 0,
+      "totalClanMemberBaked": 0,
+      "allTimeSold": 0,
+      "totalBitsEarned": 0,
+      "adventureSuccesses": 0,
+      "adventureFailures": 0,
+      "beststreak": 0,
+      "streak": 0,
+      "lastClaimedAt": 0,
+      "dailymultiplier": 1,
+      "questcompleted": 0,
+      "totalponiesbefriended": 0,
+      "totalachivements": 0,
+      "totalMessages": 0
+    },
+    "coinflip": {
+      "wins": 0,
+      "losses": 0,
+      "bitsWon": 0,
+      "bitsLost": 0,
+      "streak": 0,
+      "winStreak": 0
+    },
+    "wallet": {
+      "bits": 400,
+      "harmony": 0,
+      "diamonds": 0,
+      "tickets": 0,
+      "tokens": 0,
+      "crates": 0,
+      "keys": 0,
+      "loyalty": 0,
+      "bank": {
+        "bits": 0,
+        "harmony": 0
+      }
+    },
+    "bakery": {
+      "name": "11",
+      "level": 1,
+      "xp": 0,
+      "bakestorage": 150,
+      "maxbakestorage": 150,
+      "lastProductionUpdate": 1775697638360,
+      "nextLevelXP": 1000,
+      "lastBaked": 1775697638360,
+      "bakeCooldown": 0,
+      "bonus": 0,
+      "specialBonus": 0,
+      "storageFullNotify": false,
+      "storageFullNotified": true,
+      "storageFullNotifyAt": 0,
+      "items": {
+        "1": {
+          "id": 1,
+          "name": "Muffin",
+          "accumulated": 84,
+          "bakeTime": 6,
+          "lastCycleTime": 1775697806358
+        },
+        "2": {
+          "id": 2,
+          "name": "Chocolate Pie",
+          "accumulated": 42,
+          "bakeTime": 8,
+          "lastCycleTime": 1775697806358
+        },
+        "3": {
+          "id": 3,
+          "name": "Strawberry Cupcake",
+          "accumulated": 24,
+          "bakeTime": 9,
+          "lastCycleTime": 1775697774358
+        }
+      },
+      "itemsOwned": [
+        1,
+        2,
+        3
+      ],
+      "menu": [
+        1,
+        2,
+        3
+      ],
+      "hired": [],
+      "rebirth": 0
+    },
+    "inventory": {
+      "resources": {}
+    },
+    "appearance": {
+      "balanceTheme": "default",
+      "motto": "This user is too lazy to set a motto.",
+      "profileBackground": [],
+      "bakeryBackground": [],
+      "levelCardBG": [],
+      "cosmetics": [],
+      "activeCosmetics": []
+    },
+    "features": {
+      "unlocked": {
+        "extraMenuSlot1": false,
+        "extraMenuSlot2": false
+      },
+      "purchasedThemes": []
+    },
+    "clan": {
+      "id": null,
+      "role": null
+    },
+    "adventure": {
+      "cooldown": 0,
+      "lastCompleted": 0
+    },
+    "journey": {
+      "health": 2000,
+      "inventory": [],
+      "powerups": []
+    },
+    "server": {
+      "inServer": true,
+      "isServerBooster": true,
+      "totalMessagesSent": [],
+      "achievements": {
+        "display": [],
+        "accomplished": [],
+        "completed": 0
+      },
+      "clanData": {
+        "level": [],
+        "totalBaked": 0,
+        "rank": [],
+        "currentDimension": []
+      }
+    },
+    "profile": {
+      "tag1": "No Tag",
+      "tag2": "No Tag",
+      "tag3": "No Tag",
+      "tag4": "No Tag",
+      "Birthday": "",
+      "Pronouns": "",
+      "achivementdisplay": []
+    },
+    "locations": {
+      "owned": [
+        1
+      ],
+      "currentLocation": "Ponyville"
+    },
+    "paymentCard": {
+      "number": "7169962668058291",
+      "issuedAt": "2026-04-09T01:20:38.361Z"
+    },
+    "profileId": "LZY3N8IYA0"
+  }
+}

@@ -1,0 +1,166 @@
+$filepath = "c:\Users\y4lul\Desktop\MyLittleBot\miralune\model\MyLittlePonies.js"
+$content = [System.IO.File]::ReadAllText($filepath, [System.Text.Encoding]::UTF8)
+
+# Complete expected rarity map from screenshots (key = file rarity key, ALL CAPS)
+$expected = @{
+    # === RARE ===
+    "Aloe"="RARE"; "Apple Bloom"="RARE"; "Apple Fritter"="RARE"; "Appointed Rounds"="RARE";
+    "Berry Bliss"="RARE"; "Berry Icicle"="RARE"; "Berry Punch"="RARE"; "Big McIntosh"="RARE";
+    "Blaze"="RARE"; "Bon Bon"="RARE"; "Bottlecap"="RARE"; "Boysenberry"="RARE";
+    "Candy Apples"="RARE"; "Carrot Crunch"="RARE"; "Carrot Top"="RARE"; "Cattail"="RARE";
+    "Cerulean Skies"="RARE"; "Charity Kindheart"="RARE"; "Cheese Sandwich"="RARE";
+    "Cherry Jubilee"="RARE"; "Chief Thunderhooves"="RARE"; "Cinnamon Swirl"="RARE";
+    "Cloudy Quartz"="RARE"; "Coconut Cream"="RARE"; "Cotton"="RARE";
+    "Cranky Doodle Donkey"="RARE"; "Crescent Doo"="RARE"; "Derpy Hooves"="RARE";
+    "Double Diamond"="RARE"; "Dumb-Bell"="RARE"; "Dusty Pages"="RARE";
+    "Filly Guides"="RARE"; "Fire Streak"="RARE"; "Fleetfoot"="RARE";
+    "Fuchsia Fizz"="RARE"; "Gala Appleby"="RARE"; "Ghostberry"="RARE";
+    "Granny Smith"="RARE"; "Grassy Granite"="RARE"; "Green Jewel"="RARE";
+    "High Winds"="RARE"; "Hoops"="RARE"; "Huckleberry"="RARE";
+    "Jonagold"="RARE"; "Juniper Montage"="RARE"; "Key Lime"="RARE";
+    "Lavender Cascade"="RARE"; "Lemon Hearts"="RARE"; "Lily Longsocks"="RARE";
+    "Little Strongheart"="RARE"; "Lotus Blossom"="RARE"; "Love Sketch"="RARE";
+    "Lyra Heartstrings"="RARE"; "Matilda"="RARE"; "Melody"="RARE";
+    "Merry Melody"="RARE"; "Minuette"="RARE"; "Misty Fly"="RARE";
+    "Moon Dancer"="RARE"; "Ms. Harshwhinny"="RARE"; "Ms. Peachbottom"="RARE";
+    "Night Glider"="RARE"; "Night Light"="RARE"; "Oakey Doke"="RARE";
+    "Obscurity"="RARE"; "Octavia Melody"="RARE"; "Parasol"="RARE";
+    "Party Favor"="RARE"; "Peachy Pie"="RARE"; "Peachy Sweet"="RARE";
+    "Peggy Holstein"="RARE"; "Peppermint Goldylinks"="RARE"; "Perfect Pie"="RARE";
+    "Pokey Pierce"="RARE"; "Raven Inkwell"="RARE"; "Riverstone"="RARE";
+    "Roseluck"="RARE"; "Ruby Slippers"="RARE"; "Rumble"="RARE";
+    "Saffron Masala"="RARE"; "Sassy Saddles"="RARE"; "Scootaloo"="RARE";
+    "Seabreeze"="RARE"; "Sheriff Silverstar"="RARE"; "Silver Shill"="RARE";
+    "Silver Spanner"="RARE"; "Soyokaze"="RARE"; "Stellar Flare"="RARE";
+    "Sugar Twist"="RARE"; "Summer Breeze"="RARE"; "Sunny Daze"="RARE";
+    "Sunny Delivery"="RARE"; "Sunshower Raindrops"="RARE"; "Surprise"="RARE";
+    "Sweetie Belle"="RARE"; "Tatzlwurm"="RARE"; "Tender Taps"="RARE";
+    "Toola Roola"="RARE"; "Tornado Bolt"="RARE"; "Tree Hugger"="RARE";
+    "Trenderhoof"="RARE"; "Trixie Lulamoon"="RARE"; "Twilight Velvet"="RARE";
+    "Twinkleshine"="RARE"; "Twist"="RARE"; "Twitch"="RARE";
+    "Vignette Valencia"="RARE"; "Vinyl Scratch"="RARE"; "Wallflower Blush"="RARE";
+    "Welch"="RARE"; "Welly"="RARE"; "Zecora"="RARE"; "Zipporwhill"="RARE";
+    # === EPIC ===
+    "Adagio Dazzle"="EPIC"; "Alphabittle Blossomforth"="EPIC"; "Apple Strudel"="EPIC";
+    "Argyle Starshine"="EPIC"; "Aria Blaze"="EPIC"; "Autumn Afternoon"="EPIC";
+    "Autumn Blaze"="EPIC"; "Barley Barrel"="EPIC"; "Bow Hothoof"="EPIC";
+    "Bright Mac"="EPIC"; "Bugbear"="EPIC"; "Cerberus"="EPIC";
+    "Chimera"="EPIC"; "Cinnamon Chai"="EPIC"; "Cockatrice"="EPIC";
+    "Coco Pommel"="EPIC"; "Coloratura"="EPIC"; "Cookie Crumbles"="EPIC";
+    "Daring Do"="EPIC"; "Diamond Tiara"="EPIC"; "Dinky Doo"="EPIC";
+    "Dr. Caballeron"="EPIC"; "Dr. Fauna"="EPIC"; "Fall Flower"="EPIC";
+    "Fancy Pants"="EPIC"; "Fido"="EPIC"; "Filthy Rich"="EPIC";
+    "Firelight"="EPIC"; "Flam"="EPIC"; "Flash Sentry"="EPIC";
+    "Fleur Dis Lee"="EPIC"; "Flim"="EPIC"; "Frazzle Rock"="EPIC";
+    "Fume"="EPIC"; "Garble"="EPIC"; "Gilda"="EPIC";
+    "Gilded Lily"="EPIC"; "Gloriosa Daisy"="EPIC"; "Goldie Delicious"="EPIC";
+    "Guard"="EPIC"; "Hoity Toity"="EPIC"; "Hondo Flanks"="EPIC";
+    "Hydra"="EPIC"; "Iron Will"="EPIC"; "Jack Pot"="EPIC";
+    "Jet Set"="EPIC"; "Mane Allgood"="EPIC"; "Mayor Mare"="EPIC";
+    "Nirik"="EPIC"; "Ocean Flow"="EPIC"; "Orthros"="EPIC";
+    "Paprika"="EPIC"; "Pear Butter"="EPIC"; "Pharynx"="EPIC";
+    "Pickle Barrel"="EPIC"; "Pom"="EPIC"; "Prince Blueblood"="EPIC";
+    "Rain Shine"="EPIC"; "Rover"="EPIC"; "Ruby Jubilee"="EPIC";
+    "Sea Apple Bloom"="EPIC"; "Sea Scootaloo"="EPIC"; "Sea Sweetie Belle"="EPIC";
+    "Sea Terramar"="EPIC"; "Sea Windy Whistles"="EPIC"; "Silver Spoon"="EPIC";
+    "Sky Beak"="EPIC"; "Snap Shutter"="EPIC"; "Soarin"="EPIC";
+    "Sonata Dusk"="EPIC"; "Songbird Serenade"="EPIC"; "Spectacle"="EPIC";
+    "Spitfire"="EPIC"; "Spoiled Rich"="EPIC"; "Spot"="EPIC";
+    "Spring Glow"="EPIC"; "Steven Magnet"="EPIC"; "Strawberry Sunrise"="EPIC";
+    "Thorax"="EPIC"; "Timber Spruce"="EPIC"; "Timberwolves"="EPIC";
+    "Upper Crust"="EPIC"; "Wind Rider"="EPIC"; "Windy Whistles"="EPIC";
+    "Winter Flame"="EPIC";
+    # === MAJESTIC ===
+    "Alice"="MAJESTIC"; "Applejack"="MAJESTIC"; "Aurora"="MAJESTIC";
+    "Babs Seed"="MAJESTIC"; "Bori"="MAJESTIC"; "Bramble"="MAJESTIC";
+    "Capper"="MAJESTIC"; "Captain Celaeno"="MAJESTIC"; "Clear Sky"="MAJESTIC";
+    "Cloudpuff"="MAJESTIC"; "Copper Top"="MAJESTIC"; "Discord"="MAJESTIC";
+    "Flash Magnus"="MAJESTIC"; "Fluttershy"="MAJESTIC"; "Gallus"="MAJESTIC";
+    "Hitch Trailblazer"="MAJESTIC"; "Izzy Moonbow"="MAJESTIC"; "Limestone Pie"="MAJESTIC";
+    "Marble Pie"="MAJESTIC"; "Maud Pie"="MAJESTIC"; "Meadowbrook"="MAJESTIC";
+    "Misty Brightdawn"="MAJESTIC"; "Mudbriar"="MAJESTIC"; "Ocellus"="MAJESTIC";
+    "Parasprites"="MAJESTIC"; "Pinkie Pie"="MAJESTIC"; "Pipp Petals"="MAJESTIC";
+    "Queen Haven"="MAJESTIC"; "Radiant Hope"="MAJESTIC"; "Rainbow Dash"="MAJESTIC";
+    "Rarity"="MAJESTIC"; "Rockhoof"="MAJESTIC"; "Sandbar"="MAJESTIC";
+    "Sea Silverstream"="MAJESTIC"; "Sea Starlight Glimmer"="MAJESTIC"; "Sea Sunset Shimmer"="MAJESTIC";
+    "Shadow Lock"="MAJESTIC"; "Shining Armor"="MAJESTIC"; "Silverstream"="MAJESTIC";
+    "Smolder"="MAJESTIC"; "Smooze"="MAJESTIC"; "Somnambula"="MAJESTIC";
+    "Spike"="MAJESTIC"; "Starlight Glimmer"="MAJESTIC"; "Stygian"="MAJESTIC";
+    "Sugar Coat Crystalized"="MAJESTIC"; "Sunburst"="MAJESTIC"; "Sunny Flare Crystalized"="MAJESTIC";
+    "Sunny Starscout"="MAJESTIC"; "Sunset Shimmer"="MAJESTIC"; "Terramar"="MAJESTIC";
+    "Twilight Sparkle"="MAJESTIC"; "Velvet"="MAJESTIC"; "Windigo"="MAJESTIC";
+    "Yona"="MAJESTIC"; "Zipp Storm"="MAJESTIC";
+    # === LEGEND ===
+    "Ahuizotl"="LEGEND"; "Allura"="LEGEND"; "Chaos Chrysalis"="LEGEND";
+    "Chaos Cozy Glow"="LEGEND"; "Chrysalis"="LEGEND"; "Cozy Glow"="LEGEND";
+    "Daybreaker"="LEGEND"; "Ember"="LEGEND"; "Flurry Heart"="LEGEND";
+    "Grogar"="LEGEND"; "Grubber"="LEGEND"; "Gusty the Great"="LEGEND";
+    "King Sombra"="LEGEND"; "Lord Tirek"="LEGEND"; "Mean Applejack"="LEGEND";
+    "Mean Fluttershy"="LEGEND"; "Mean Pinkie Pie"="LEGEND"; "Mean Rainbow Dash"="LEGEND";
+    "Mean Rarity"="LEGEND"; "Mean Twilight Sparkle"="LEGEND"; "Mistmane"="LEGEND";
+    "Nightmare Moon"="LEGEND"; "Oleander"="LEGEND"; "Opaline Arcana"="LEGEND";
+    "Philomena"="LEGEND"; "Pinkamena Diane Pie"="LEGEND"; "Prince Rutherford"="LEGEND";
+    "Princess Amore"="LEGEND"; "Princess Cadance"="LEGEND"; "Princess Celestia"="LEGEND";
+    "Princess Luna"="LEGEND"; "Princess Skystar"="LEGEND"; "Queen Chrysalis"="LEGEND";
+    "Queen Novo"="LEGEND"; "Sphinx"="LEGEND"; "Star Swirl the Bearded"="LEGEND";
+    "Tantabus"="LEGEND"; "Tempest Shadow"="LEGEND"; "The Storm King"="LEGEND";
+    "Tianhuo"="LEGEND"; "Violet Shiver"="LEGEND";
+    # === SECRET ===
+    "Angel Wings"="SECRET"; "Anon"="SECRET"; "Baby Discord"="SECRET";
+    "Blossomforth"="SECRET"; "Cewestia"="SECRET"; "Element Of Generosity"="SECRET";
+    "Element Of Honesty"="SECRET"; "Element Of Kindness"="SECRET"; "Element Of Laughter"="SECRET";
+    "Element Of Loyalty"="SECRET"; "Element Of Magic"="SECRET"; "Harmonized Applejack"="SECRET";
+    "Harmonized Fluttershy"="SECRET"; "Harmonized Pinkie Pie"="SECRET"; "Harmonized Rainbow Dash"="SECRET";
+    "Harmonized Rarity"="SECRET"; "Harmonized Twilight Sparkle"="SECRET"; "Helia"="SECRET";
+    "Jade Singer"="SECRET"; "Luster Dawn"="SECRET"; "Midnight Blossom"="SECRET";
+    "Older Rainbow Dash"="SECRET"; "Pony of Shadows"="SECRET"; "Princess Thunder Guts"="SECRET";
+    "Screwball"="SECRET"; "Sea Applejack"="SECRET"; "Sea Fluttershy"="SECRET";
+    "Sea Pinkie Pie"="SECRET"; "Sea Rainbow Dash"="SECRET"; "Sea Rarity"="SECRET";
+    "Sea Twilight Sparkle"="SECRET"; "Wind Sprint"="SECRET"; "Woona"="SECRET";
+    # === UNIQUE ===
+    "Applejack Bat"="UNIQUE"; "Applepills"="UNIQUE"; "Blowspike"="UNIQUE";
+    "Brutalight Sparcake"="UNIQUE"; "Cherry Spices"="UNIQUE"; "Christmas Fluttershy"="UNIQUE";
+    "Christmas Rarity"="UNIQUE"; "Cosmos"="UNIQUE"; "Derpigun"="UNIQUE";
+    "Echo"="UNIQUE"; "Flawless"="UNIQUE"; "Fluttershout"="UNIQUE";
+    "Fuchsia Blush"="UNIQUE"; "Lucky Roll"="UNIQUE"; "Night Watch"="UNIQUE";
+    "Nightmare Pinkie"="UNIQUE"; "Nightmare Star"="UNIQUE"; "Petunia Petals"="UNIQUE";
+    "Pinkie Pie Bat"="UNIQUE"; "Pinkis Cupcake"="UNIQUE"; "Princess Eris"="UNIQUE";
+    "Princess Trixie"="UNIQUE"; "Princess Twilight Sparkle"="UNIQUE"; "Rainbine"="UNIQUE";
+    "Rainbow Dash Bat"="UNIQUE"; "RariFruit"="UNIQUE"; "Rarity Bat"="UNIQUE";
+    "Sable Spirit"="UNIQUE"; "Sadako"="UNIQUE"; "SciTwilight"="UNIQUE";
+    "Speck"="UNIQUE"; "Sunset Satan"="UNIQUE"; "Swift Foot"="UNIQUE";
+    "Twilight Sparkle Bat"="UNIQUE"; "Umbrum"="UNIQUE";
+    # === EVENT ===
+    "Cozy Demon"="EVENT"; "Flutterholly"="EVENT"; "Fluttershy Bat"="EVENT";
+    "Merry"="EVENT"; "Minty"="EVENT"; "Nightmare Rarity"="EVENT";
+    "Nocturn"="EVENT"; "Rarity Angel"="EVENT"; "Rarity Demon"="EVENT";
+    "Skellinore"="EVENT"; "Snowdash"="EVENT"; "Snowfall Frost"="EVENT";
+    "Spirit of Hearth's Warming Past"="EVENT"; "Spirit of Hearth's Warming Presents"="EVENT";
+    "Spirit of Hearth's Warming Yet to Come"="EVENT"; "Sweetie Angel"="EVENT"
+}
+
+$mismatches = @()
+$notFound = @()
+
+foreach ($name in ($expected.Keys | Sort-Object)) {
+    $want = $expected[$name]
+    $escaped = [regex]::Escape($name)
+    $ms = [regex]::Matches($content, "(?i)name: '$escaped'[^\n]+rarity: rarities\.(\w+)")
+    if ($ms.Count -eq 0) {
+        $notFound += $name
+    } else {
+        foreach ($m in $ms) {
+            $got = $m.Groups[1].Value.ToUpper()
+            if ($got -ne $want) {
+                $mismatches += [PSCustomObject]@{ Name=$name; Got=$got; Want=$want; Match=$m.Value.Substring(0,[Math]::Min(60,$m.Value.Length)) }
+            }
+        }
+    }
+}
+
+Write-Host "=== MISMATCHES ($($mismatches.Count)) ==="
+$mismatches | Sort-Object Want,Name | ForEach-Object { Write-Host "  [$($_.Want)] $($_.Name) (currently $($_.Got))" }
+
+Write-Host ""
+Write-Host "=== NOT IN FILE ($($notFound.Count)) ==="
+$notFound | ForEach-Object { Write-Host "  - $_" }

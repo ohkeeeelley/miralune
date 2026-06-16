@@ -1,0 +1,36 @@
+{
+  "853496137130835970": {
+    "xp": 367,
+    "level": 2,
+    "totalXP": 667,
+    "card": "default_bg",
+    "lastMessage": 1777167087877,
+    "progressColor": [
+      "#de8cff",
+      "#ff0f58"
+    ],
+    "progressAnimated": true,
+    "progressStyle": "shimmer"
+  },
+  "1339288689188143219": {
+    "xp": 21,
+    "level": 0,
+    "totalXP": 21,
+    "card": "default_bg",
+    "lastMessage": 1775760108810
+  },
+  "501165427205079040": {
+    "xp": 38,
+    "level": 0,
+    "totalXP": 38,
+    "card": "default_bg",
+    "lastMessage": 1775719791072
+  },
+  "504273849488244737": {
+    "xp": 61,
+    "level": 1,
+    "totalXP": 61,
+    "card": "default_bg",
+    "lastMessage": 1777167056828
+  }
+}

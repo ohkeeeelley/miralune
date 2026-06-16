@@ -1,0 +1,406 @@
+{
+  "853496137130835970": {
+    "eg_name": "Liora Dawnbloom",
+    "eg_age": "240",
+    "eg_description": "",
+    "createdAt": "2026-04-06T22:15:12.920Z",
+    "xp": 0,
+    "collection": [
+      {
+        "id": 1063,
+        "name": "Vinyl Scratch",
+        "png": "vinyl_scratch.png",
+        "rarity": "Epic"
+      }
+    ],
+    "befriendedPonies": [
+      {
+        "id": 1063,
+        "name": "Vinyl Scratch",
+        "png": "vinyl_scratch.png",
+        "rarity": "Epic",
+        "befriendedAt": "2026-04-07T05:05:44.467Z"
+      }
+    ],
+    "favs": [],
+    "joinedAt": "2026-04-06T22:15:12.920Z",
+    "AllTimeBaked": 0,
+    "ClanMemberBaked": 0,
+    "ClanId": null,
+    "ClanRole": null,
+    "coinflipStats": {
+      "wins": 0,
+      "losses": 0,
+      "bitsWon": 0,
+      "bitsLost": 0,
+      "streak": 0,
+      "winStreak": 0
+    },
+    "coinflipStreak": 0,
+    "coinflipWinStreak": 0,
+    "paymentCard": {
+      "number": "7169962668058291",
+      "issuedAt": "2026-04-06T22:15:12.922Z"
+    },
+    "profileId": "LZY3N8IYA0",
+    "bakeryName": "Sugarcube Corner",
+    "bakeries": {
+      "1": {
+        "id": 1,
+        "name": "Muffin",
+        "accumulated": 63,
+        "bakeTime": 6,
+        "lastCycleTime": 1775514090917
+      },
+      "2": {
+        "id": 2,
+        "name": "Chocolate Pie",
+        "accumulated": 47,
+        "bakeTime": 8,
+        "lastCycleTime": 1775514088918
+      },
+      "3": {
+        "id": 3,
+        "name": "Strawberry Cupcake",
+        "accumulated": 40,
+        "bakeTime": 9,
+        "lastCycleTime": 1775514072918
+      }
+    },
+    "bakeriesowned": [
+      1,
+      2,
+      3
+    ],
+    "menu": [
+      1,
+      2,
+      3
+    ],
+    "BakeryLevel": 1,
+    "BakeryXP": 100,
+    "NextLevelXP": 1000,
+    "LastBaked": 1775513712920,
+    "BakeCooldown": 0,
+    "BakeryBonus": 0,
+    "StorageFullNotify": false,
+    "StorageFullNotifyAt": 0,
+    "SpecialBonus": 0,
+    "BalanceTheme": "default",
+    "Motto": "This user is too lazy to set a motto.",
+    "Hired": [],
+    "Inventory": {
+      "Resources": {}
+    },
+    "Rebirth": 0,
+    "AchievementsDisplay": [],
+    "Achivements": [],
+    "AchivementCompleted": 0,
+    "InServer": true,
+    "ServerBooster": true,
+    "Extra1MenuSlot": false,
+    "Extra2MenuSlot": false,
+    "TotalMessageSent": [],
+    "ProfileBackground": [],
+    "BakeryBackground": [],
+    "LevelCardBG": [],
+    "Cosmethics": [],
+    "ActiveCosmethics": [],
+    "PurchasedThemes": [],
+    "JournyHealth": 2000,
+    "JournyInventory": [],
+    "JournyPowerup": [],
+    "balances": {
+      "bits": 640,
+      "harmony": 16,
+      "diamonds": 0,
+      "crates": 0,
+      "keys": 2,
+      "loyalty": 0,
+      "bank": {
+        "bits": 0,
+        "harmony": 0
+      }
+    },
+    "stats": {
+      "totalAllTimeBaked": 0,
+      "totalClanMemberBaked": 0,
+      "allTimeSold": 0,
+      "totalBitsEarned": 400,
+      "adventureSuccesses": 1,
+      "adventureFailures": 0,
+      "beststreak": 0,
+      "streak": 0,
+      "lastClaimedAt": 0,
+      "dailymultiplier": 1,
+      "questcompleted": 0,
+      "totalponiesbefriended": 0,
+      "totalachivements": 0,
+      "totalMessages": 1
+    },
+    "adventureCooldown": 1775538364469,
+    "lastAdventure": 1775538344469,
+    "reminderEnabled": false,
+    "bakery": {
+      "name": "Sugarcube Corner",
+      "level": 1,
+      "xp": 100,
+      "items": {
+        "1": {
+          "id": 1,
+          "name": "Muffin",
+          "accumulated": 63,
+          "bakeTime": 6,
+          "lastCycleTime": 1775514090917
+        },
+        "2": {
+          "id": 2,
+          "name": "Chocolate Pie",
+          "accumulated": 47,
+          "bakeTime": 8,
+          "lastCycleTime": 1775514088918
+        },
+        "3": {
+          "id": 3,
+          "name": "Strawberry Cupcake",
+          "accumulated": 40,
+          "bakeTime": 9,
+          "lastCycleTime": 1775514072918
+        }
+      },
+      "itemsOwned": [
+        1,
+        2,
+        3
+      ],
+      "menu": [
+        1,
+        2,
+        3
+      ],
+      "storageFullNotify": false,
+      "storageFullNotified": true,
+      "storageFullNotifyAt": 0,
+      "bakestorage": 150,
+      "nextLevelXP": 1000
+    },
+    "server": {
+      "character": {
+        "name": "Liora Dawnbloom",
+        "age": "240",
+        "description": "",
+        "createdAt": "2026-04-06T22:15:12.920Z"
+      },
+      "global": {
+        "xp": 0,
+        "joinedAt": "2026-04-06T22:15:12.920Z",
+        "collection": [
+          {
+            "id": 1063,
+            "name": "Vinyl Scratch",
+            "png": "vinyl_scratch.png",
+            "rarity": "Epic"
+          }
+        ],
+        "befriendedPonies": [
+          {
+            "id": 1063,
+            "name": "Vinyl Scratch",
+            "png": "vinyl_scratch.png",
+            "rarity": "Epic",
+            "befriendedAt": "2026-04-07T05:05:44.467Z"
+          }
+        ],
+        "favorites": []
+      },
+      "stats": {
+        "totalAllTimeBaked": 0,
+        "totalClanMemberBaked": 0,
+        "allTimeSold": 0,
+        "totalBitsEarned": 400,
+        "adventureSuccesses": 1,
+        "adventureFailures": 0,
+        "beststreak": 0,
+        "streak": 0,
+        "lastClaimedAt": 0,
+        "dailymultiplier": 1,
+        "questcompleted": 0,
+        "totalponiesbefriended": 0,
+        "totalachivements": 0,
+        "totalMessages": 98
+      },
+      "coinflip": {
+        "wins": 0,
+        "losses": 0,
+        "bitsWon": 0,
+        "bitsLost": 0,
+        "streak": 0,
+        "winStreak": 0
+      },
+      "wallet": {
+        "bits": 640,
+        "harmony": 16,
+        "diamonds": 0,
+        "crates": 0,
+        "keys": 2,
+        "loyalty": 0,
+        "bank": {
+          "bits": 0,
+          "harmony": 0
+        }
+      },
+      "bakery": {
+        "name": "Sugarcube Corner",
+        "level": 1,
+        "xp": 100,
+        "bakestorage": 150,
+        "maxbakestorage": 150,
+        "lastProductionUpdate": 1775513712920,
+        "nextLevelXP": 1000,
+        "lastBaked": 1775513712920,
+        "bakeCooldown": 0,
+        "bonus": 0,
+        "specialBonus": 0,
+        "storageFullNotify": false,
+        "storageFullNotified": true,
+        "storageFullNotifyAt": 0,
+        "items": {
+          "1": {
+            "id": 1,
+            "name": "Muffin",
+            "accumulated": 63,
+            "bakeTime": 6,
+            "lastCycleTime": 1775514090917
+          },
+          "2": {
+            "id": 2,
+            "name": "Chocolate Pie",
+            "accumulated": 47,
+            "bakeTime": 8,
+            "lastCycleTime": 1775514088918
+          },
+          "3": {
+            "id": 3,
+            "name": "Strawberry Cupcake",
+            "accumulated": 40,
+            "bakeTime": 9,
+            "lastCycleTime": 1775514072918
+          }
+        },
+        "itemsOwned": [
+          1,
+          2,
+          3
+        ],
+        "menu": [
+          1,
+          2,
+          3
+        ],
+        "hired": [],
+        "rebirth": 0
+      },
+      "inventory": {
+        "resources": {}
+      },
+      "appearance": {
+        "balanceTheme": "default",
+        "motto": "This user is too lazy to set a motto.",
+        "profileBackground": [],
+        "bakeryBackground": [],
+        "levelCardBG": [],
+        "cosmetics": [],
+        "activeCosmetics": []
+      },
+      "features": {
+        "unlocked": {
+          "extraMenuSlot1": false,
+          "extraMenuSlot2": false
+        },
+        "purchasedThemes": []
+      },
+      "clan": {
+        "id": null,
+        "role": null
+      },
+      "adventure": {
+        "cooldown": 1775538364469,
+        "lastCompleted": 1775538344469
+      },
+      "journey": {
+        "health": 2000,
+        "inventory": [],
+        "powerups": []
+      },
+      "server": {
+        "inServer": true,
+        "isServerBooster": true,
+        "totalMessagesSent": [],
+        "achievements": {
+          "display": [],
+          "accomplished": [],
+          "completed": 0
+        },
+        "clanData": {
+          "level": [],
+          "totalBaked": 0,
+          "rank": [],
+          "currentDimension": []
+        }
+      },
+      "profile": {
+        "tag1": "No Tag",
+        "tag2": "No Tag",
+        "tag3": "No Tag",
+        "tag4": "No Tag",
+        "Birthday": "",
+        "Pronouns": "",
+        "achivementdisplay": []
+      },
+      "locations": {
+        "owned": [
+          1
+        ],
+        "currentLocation": "Ponyville"
+      },
+      "paymentCard": {
+        "number": "7169962668058291",
+        "issuedAt": "2026-04-06T22:15:12.922Z"
+      },
+      "profileId": "LZY3N8IYA0",
+      "inServer": true,
+      "isServerBooster": true,
+      "eggs": 0,
+      "milk": 0,
+      "apples": 0,
+      "sugar": 0,
+      "flower": 0,
+      "whipcream": 0,
+      "rainbow_apple": 0,
+      "grapes": 0,
+      "lettuce": 0,
+      "pineapple": 0,
+      "lime": 0,
+      "cherry": 0,
+      "watermelon": 0,
+      "banana": 0,
+      "kiwi": 0,
+      "wrench": 0,
+      "wood": 0,
+      "stone": 0,
+      "bolts": 0,
+      "hammer": 0,
+      "nails": 0,
+      "saw": 0
+    },
+    "locations": {
+      "owned": [
+        1
+      ],
+      "currentLocation": "Ponyville"
+    },
+    "wallet": {
+      "bits": 80
+    }
+  }
+}

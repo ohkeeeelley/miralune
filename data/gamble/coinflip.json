@@ -1,0 +1,18 @@
+{
+  "": {
+    "": {
+      "challenger": "userId",
+      "opponent": "opponentId",
+      "status": "pending",
+      "created": 0
+    }
+  },
+  "1475754440441991200": {
+    "853496137130835970": {
+      "challenger": "853496137130835970",
+      "opponent": "501165427205079040",
+      "status": "pending",
+      "created": 1772943369940
+    }
+  }
+}

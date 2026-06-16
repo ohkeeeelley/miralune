@@ -1,0 +1,26 @@
+{
+  "messages": {
+    "enabled": true,
+    "channelId": "1490471431673348310"
+  },
+  "joinLeave": {
+    "enabled": false,
+    "channelId": null
+  },
+  "moderation": {
+    "enabled": true,
+    "channelId": "1490471431673348310"
+  },
+  "channels": {
+    "enabled": true,
+    "channelId": "1490471431673348310"
+  },
+  "roles": {
+    "enabled": true,
+    "channelId": "1490471431673348310"
+  },
+  "server": {
+    "enabled": true,
+    "channelId": "1490471431673348310"
+  }
+}

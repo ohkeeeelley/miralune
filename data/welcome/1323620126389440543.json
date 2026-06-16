@@ -1,0 +1,13 @@
+{
+  "channelId": "1494050652232356062",
+  "roleId": "1361397716659208335",
+  "activeWelcome": "Default",
+  "welcomes": {
+    "Default": {
+      "heading": "New Incomer",
+      "title": "{user} just joined the server",
+      "description": "Member #{count}",
+      "message": "Welcome to {server}! Enjoy your stay~ {mention}"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "channelId": "1479977567770644692",
+  "verifiedRoleId": "1478327716355903570",
+  "unverifiedRoleId": null,
+  "type": "basic",
+  "passcode": null,
+  "quiz": {
+    "core": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "extra": []
+  },
+  "ui": {
+    "passcode": {
+      "title": "Server Verification",
+      "description": "Click Verify and enter the passcode digits."
+    },
+    "quiz": {
+      "title": "Server Verification",
+      "description": "Click Verify and answer the quiz modal correctly."
+    }
+  },
+  "panelChannelId": "1479977567770644692",
+  "panelMessageId": "1492423124107657287",
+  "updatedAt": 1775902435660
+}

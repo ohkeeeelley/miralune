@@ -1,0 +1,8 @@
+const BITS = '<:bits:1427177661142405150>';
+const HARMONY = '<:harmony:1426268627790725160>';
+const LOYALTY = '<:loyalty:1429105403995754649>';
+const CRATES = '<a:gift:1426390082167771227>';
+const DIAMONDS = '<a:diamond:1426290404885532773>';
+const KEYS = '<a:keys:1429112429836500992>';
+
+module.exports = { BITS, HARMONY, LOYALTY, CRATES, DIAMONDS, KEYS };

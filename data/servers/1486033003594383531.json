@@ -1,0 +1,13 @@
+{
+  "leveling": {
+    "enabled": false,
+    "levelUpChannel": null
+  },
+  "moderation": {
+    "enabled": false
+  },
+  "spawnChannels": [],
+  "channelTargets": {},
+  "channelCounters": {},
+  "guildTarget": null
+}

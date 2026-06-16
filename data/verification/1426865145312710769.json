@@ -1,0 +1,41 @@
+{
+  "channelId": "1491944569879920701",
+  "verifiedRoleId": "1446473848739598367",
+  "unverifiedRoleId": null,
+  "type": "quiz",
+  "passcode": null,
+  "quiz": {
+    "core": [
+      {
+        "question": "What is Fluttershy's Element?",
+        "answer": "Element of Kindness"
+      },
+      {
+        "question": "Who Saved The Empire",
+        "answer": "Spike"
+      },
+      {
+        "question": "Who is the Princess of Friendship?",
+        "answer": "Twilight Sparkle"
+      },
+      {
+        "question": "Who is The Great and Powerful?",
+        "answer": "Trixie"
+      }
+    ],
+    "extra": []
+  },
+  "ui": {
+    "passcode": {
+      "title": "Server Verification",
+      "description": "Click Verify and enter the passcode digits."
+    },
+    "quiz": {
+      "title": "Server Verification",
+      "description": "Click Verify to start the MLP Quiz, Once you've answered them all correctly, you will automatically get verified!"
+    }
+  },
+  "panelChannelId": "1491944569879920701",
+  "panelMessageId": "1491945405510844599",
+  "updatedAt": 1775789193680
+}

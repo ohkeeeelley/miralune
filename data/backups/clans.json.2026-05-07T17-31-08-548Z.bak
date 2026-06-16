@@ -1,0 +1,22 @@
+{
+  "sugar_rush_mmitnrji": {
+    "id": "sugar_rush_mmitnrji",
+    "name": "Sugar Rush",
+    "ownerId": "853496137130835970",
+    "createdAt": 1773039030318,
+    "members": [
+      "853496137130835970"
+    ],
+    "roles": {
+      "853496137130835970": "owner"
+    },
+    "TotalClanBaked": 243,
+    "AllTimeBaked": 243,
+    "lastDistributedTotal": 0,
+    "memberContributions": {
+      "853496137130835970": 243
+    },
+    "xp": 0,
+    "level": 1
+  }
+}
